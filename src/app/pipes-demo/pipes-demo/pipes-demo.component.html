@@ -1,0 +1,27 @@
+<hr/>
+<h1>Pipes Demo</h1>
+
+<h3> Without date Pipe </h3>
+<div>
+    Last Logged in @ {{lastLoggedInTime}}
+    <!-- OUTPUT  Last Logged in @ Mon Jun 25 2018 11:48:11 GMT+0530 (India Standard Time) -->
+</div>
+<h3> With date Pipe </h3>
+<div>
+    Last Logged in @ {{lastLoggedInTime | date}}
+    <!-- OUTPUT  Last Logged in @ Jun 25, 2018 -->
+</div>
+<div>
+    Last Logged in @ {{lastLoggedInTime | date:"MM/dd/yy"}}
+    <!-- OUTPUT  Last Logged in @ Jun 25, 2018 -->
+</div>
+<div>
+    Last Logged in @ {{lastLoggedInTime | date | uppercase}}
+    <!-- OUTPUT  Last Logged in @ Jun 25, 2018 -->
+</div>
+<hr/>
+<p>Total Words in - Angular is an application design framework - :
+     {{ "Angular is an application design framework" | wordcount}} </p>
+<hr/>
+<h3>Event Binding</h3>    
+<button (click)="onShow()" >Show</button>

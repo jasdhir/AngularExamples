@@ -1,0 +1,11 @@
+<hr/>
+<h1>Two Way Data Binding</h1>
+Enter your name: <input type="text" [(ngModel)]='name'><br>
+<p>Hello, {{ name }} !!!</p>
+<hr/>
+<div>
+    <h2> Employee Names</h2>
+    <ul *ngFor = "let emp of employees">
+      <li> {{ emp.name }} - {{emp.id}}</li>
+    </ul>
+  </div>
